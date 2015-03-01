@@ -16,13 +16,13 @@ defaults:
 
 description: Stylish Jekyll Theme
 author:
-  name: dbyll
-  email: dbyll@ismaildemirbilek.com
-  github: dbtek
-  twitter: dbtek
+  name: Paweł Ponieważ
+  email: pponiewaz@sigma.ug.edu.pl
+  github: htpp://github.com/pponiewaz
+  twitter: asd123
   pinterest: asd123
   linkedin: asd123
-  bio: Your stylish, minimalist theme!
+  bio: Pierwsze kroki w branży IT
   email_md5: 726351295ec82e145928582f595aa3aa
 
 rss_path: feed.xml
