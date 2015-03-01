@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Hello world!
-categories: [general]
-tags: [demo]
-description: Witaj swiecie, cos tu powinienem napisac... Testuje mozliwosci skórki.
+title: Sample 2
+categories: [general, demo, sample]
+tags: [demo, dbyll, dbtek, sample2]
+description: Sample placeholder post.
 ---
 
 ### Hello world.  
