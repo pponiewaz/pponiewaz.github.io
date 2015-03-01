@@ -2,9 +2,10 @@
 lyout: post
 title: Hello world!
 categories: [general]
-tags: [marzec]
+tags: [demo]
 description: Witaj swiecie, cos tu powinienem napisac... Testuje mozliwosci skórki.
 ---
+
 ### Hello world.  
 ```java
 System.out.println("Hello world").
