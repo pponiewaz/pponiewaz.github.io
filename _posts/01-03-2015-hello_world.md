@@ -1,5 +1,5 @@
 ---
-lyout: post
+layout: post
 title: Hello world!
 categories: [general]
 tags: [demo]
