@@ -28,16 +28,7 @@
 	<!-- Script for Leafletjs  -->
 	<script src="leaflet/leaflet.js"></script>
 	<script>
-	window.onload = function() {
-		//everything runs there
-		var map = L.map('map', {
-			center: [30.0, 0.0],
-			zoom: 2,
-		});
-		L.tileLayer{'https://a.tiles.mapbox.com/v4/pponiewaz.lihien2k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoicHBvbmlld2F6IiwiYSI6Ijg2TjFVRE0ifQ.hXTRrNX_Dp4h_qomsgv79A', {
-			attribution: 'Mapka',
-		}}.addTo(map)
-	}
+	
 	</script>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -112,9 +103,20 @@
   		<div class="row mt">
   			<div class="col-lg-6">
   				<h4>Mapa</h4>
-  				<div id="map">
-  					<iframe width='100%' height='170px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/pponiewaz.lihien2k/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoicHBvbmlld2F6IiwiYSI6Ijg2TjFVRE0ifQ.hXTRrNX_Dp4h_qomsgv79A'></iframe>
-  				</div>
+  				<div id="map" class="map" style="height: 170px">
+              <script>
+            // create a map in the "map" div, set the view to a given place and zoom
+                var map = L.map('map').setView([53.7749, 20.4808], 10);
+            // add an OpenStreetMap tile layer
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+            // add a marker in the given location, attach some popup content to it and open the popup
+                L.marker([53.7749, 20.4808]).addTo(map)
+                .bindPopup('Moje miasto')
+                .openPopup();
+              </script>
+            </div>
   			</div><!-- /colg-lg-6 -->
 
   			<div class="col-lg-6">
